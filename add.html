@@ -1,0 +1,15 @@
+{% extends 'todolist/layout.html' %}
+
+{% block body %}
+
+    <h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit">
+        </form>
+    </h1>
+
+    <a href="{% url 'tasklist' %}"> View Tasks </a>
+
+{% endblock %}

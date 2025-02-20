@@ -1,0 +1,31 @@
+{% extends 'todolist/layout.html' %}
+
+{% block body %}
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Deadline</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks_queryset %}
+        <tr>
+            <td>{{ task.id }}</td>
+            <td>{{ task.task }}</td>
+            <td>{{ task.status }}</td>
+            <td>{{ task.deadline }}</td>
+            <td>{{ task.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url 'add' %}"> Add Tasks </a>
+<a href="{% url 'delete' %}"> Delete Tasks </a>
+
+{% endblock %}
