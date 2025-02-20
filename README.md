@@ -1,4 +1,4 @@
-#### This is outdated. A new README will soon replace it. The new version of the application is fully on web now utilizing django. (must run locally though)
+#### This is outdated and a new README will soon replace it. The new version of the application is fully on web now utilizing django. (must run locally though)
 
 # To-Do List Application
 #### Video Demo: https://youtu.be/HD_gfCh4FX8
